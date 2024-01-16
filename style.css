@@ -1,0 +1,180 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  color: #ccc;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styles */
+body {
+  align-items: center;
+  background: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Container Styles */
+.container h2 {
+  color: #ccc;
+  font-size: 1.31rem;
+  font-weight: 600;
+  padding: 1rem 1.75rem;
+  text-align: center;
+}
+
+/* Wrapper Styles */
+.wrapper {
+  margin: 1.25rem 1.75rem;
+}
+
+/* Input Box Styles */
+.wrapper .inputBox {
+  position: relative;
+}
+
+/* Input Styles */
+.inputBox input {
+  background: none;
+  border: 1px solid #ccc;
+  color: #fff;
+  font-size: 1.06rem;
+  font-weight: 500;
+  height: 53px;
+  letter-spacing: 1.4px;
+  outline: none;
+  padding: 0 2.85rem 0 1rem;
+  width: 100%;
+}
+
+.inputBox span {
+  color: #ccc;
+  cursor: pointer;
+  line-height: 53px;
+  position: absolute;
+  right: 13px;
+}
+
+/* Password Indicator Styles */
+.wrapper .indicator {
+  background: #ccc;
+  border-radius: 25px;
+  height: 4px;
+  margin-top: 0.75rem;
+  position: relative;
+  width: 100%;
+}
+
+.indicator::before {
+  background: #fcff26;
+  border-radius: inherit;
+  content: "";
+  height: 100%;
+  position: absolute;
+  transition: width 0.3s ease;
+  width: 50%;
+}
+
+.indicator#extremely-weak::before {
+  width: 10%;
+  background: #ff2626;
+}
+
+.indicator#very-weak::before {
+  width: 20%;
+  background: #ff5733;
+}
+
+.indicator#weak::before {
+  width: 30%;
+  background: #ff8c33;
+}
+
+.indicator#somewhat-weak::before {
+  width: 40%;
+  background: #ffbf33;
+}
+
+.indicator#medium::before {
+  width: 50%;
+  background: #fcff26;
+}
+
+.indicator#somewhat-strong::before {
+  width: 60%;
+  background: #d2ff26;
+}
+
+.indicator#strong::before {
+  width: 70%;
+  background: #8cff26;
+}
+
+.indicator#very-strong::before {
+  width: 80%;
+  background: #4aff26;
+}
+
+.indicator#extremely-strong::before {
+  width: 90%;
+  background: #26d730;
+}
+
+.indicator#exceptionally-strong::before {
+  width: 100%;
+  background: #26d730;
+}
+
+/* Pass Length Styles */
+.wrapper .passswordLength {
+  margin: 1.56rem 0 1.25rem;
+}
+
+.passswordLength .details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.passswordLength input {
+  height: 5px;
+  width: 100%;
+}
+
+/* Pass Settings Styles */
+.settings .options {
+  color: #ccc;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.settings .options .option {
+  align-items: center;
+  color: #ccc;
+  display: flex;
+  margin-bottom: 1rem;
+  width: calc(100% / 2);
+}
+
+.options .option:first-child {
+  pointer-events: none;
+}
+
+.options .option:first-child input {
+  opacity: 0.7;
+}
+
+.options .option input {
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+}
+
+.options .option label {
+  color: #ccc;
+  cursor: pointer;
+  padding-left: 0.63rem;
+}
